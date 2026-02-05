@@ -52,9 +52,9 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
 
 ## 🎥 Screenshots
 
-docs/screenshots/screenshot1.png  
-docs/screenshots/screenshot2.png  
-docs/screenshots/screenshot3.png
+![Screenshot 1](docs/screenshots/screenshot1.png)
+![Screenshot 2](docs/screenshots/screenshot2.png)
+![Screenshot 3](docs/screenshots/screenshot3.png)
 
 ---
 
@@ -131,4 +131,5 @@ See `LICENSE` for details.
 
 Created by **Rik de Koning**  
 More at: https://about365.nl
+
 
