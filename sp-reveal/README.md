@@ -1,7 +1,7 @@
 # SP Reveal
 
-**SP Reveal** is a modern productivity extension for **SharePoint Online** that adds developer-focused tools directly into list and item forms.  
-It helps admins, developers, and power users work faster by revealing internal names, generating URLs, duplicating items, and inspecting full item payloads.
+**SP Reveal** is a modern productivity extension for **SharePoint Online** that adds developer‑focused tools directly into list and item forms.  
+It helps admins, developers, and power users work faster by revealing internal names, generating URLs, duplicating items, and inspecting full item payloads — all directly inside SharePoint.
 
 ---
 
@@ -13,8 +13,8 @@ It helps admins, developers, and power users work faster by revealing internal n
 - Copy item ID
 - Copy item URL (correctly normalized)
 - Copy item API URL
-- Duplicate item (copies simple fields)
-- Show all fields (searchable Fluent-style dialog)
+- Duplicate item (copies simple fields using SharePoint REST API)
+- Show all fields (searchable Fluent-style dialog with JSON export)
 
 ### List actions
 - Copy list GUID  
