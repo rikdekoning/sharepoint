@@ -77,13 +77,13 @@ No permission is used for tracking or analytics.
 Use these in your store listing:
 
 1. **"Quick tools for SharePoint items — copy IDs, URLs, and API endpoints instantly."**  
-   (screenshot1.png)
+   ![Screenshot 1](docs/screenshots/screenshot1.png)
 
-2. **"Reveal internal (logical) column names directly on the form."**  
-   (screenshot2.png)
+2. **"Reveal internal (logical) column names directly on the form."**   
+   ![Screenshot 2](docs/screenshots/screenshot2.png)
 
 3. **"Inspect all item fields with search and JSON export."**  
-   (screenshot3.png)
+   ![Screenshot 2](docs/screenshots/screenshot3.png)
 
 ---
 
@@ -115,3 +115,4 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
 ---
 
 This file is ready for publication or further customization.
+
