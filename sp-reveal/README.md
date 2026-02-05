@@ -38,15 +38,19 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
    ```bash
    git clone https://github.com/rikdekoning/sharepoint.git
 
-2. Open your browser and navigate to the extensions page:
+2. Navigate to the SP Reveal extension folder:
+   ```bash
+   cd sharepoint/sp-reveal
+
+3. Open your browser and navigate to the extensions page:
    - Chrome: `chrome://extensions/`
    - Edge: `edge://extensions/`
 
-3. Enable **Developer mode**.
+4. Enable **Developer mode**.
 
-4. Click **Load unpacked**.
+5. Click **Load unpacked**.
 
-5. Select the `src/` folder from this repository.
+6. Select the `src/` folder inside the sp-reveal folder.
 
 ---
 
@@ -129,6 +133,7 @@ See `LICENSE` for details.
 
 Created by **Rik de Koning**  
 More at: https://about365.nl
+
 
 
 
