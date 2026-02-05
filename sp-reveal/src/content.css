@@ -1,0 +1,175 @@
+/* ===== SP Reveal (minimal, SharePoint-style) ===== */
+
+/* Floating action button */
+#spr-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2147483647;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0078d4; /* SharePoint blue */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+  user-select: none;
+  font: 600 18px/1.2 Segoe UI, Arial, sans-serif;
+}
+
+/* Control panel */
+#spr-panel {
+  position: fixed;
+  right: 18px;
+  bottom: 72px;
+  z-index: 2147483647;
+  width: 330px;
+  max-height: 70vh;
+  background: #ffffff;
+  color: #242424;
+  border: 1px solid #e1dfdd;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: none;
+  font: 13px/1.4 Segoe UI, Arial, sans-serif;
+}
+
+#spr-panel header {
+  padding: 10px 12px;
+  background: #f3f2f1;
+  border-bottom: 1px solid #e1dfdd;
+  font-weight: 600;
+}
+
+#spr-panel .spr-body {
+  padding: 10px 12px;
+  overflow-y: auto;
+}
+#spr-panel .spr-group {
+  margin-bottom: 10px;
+}
+#spr-panel .spr-group h4 {
+  margin: 10px 0 6px;
+  font-size: 12px;
+  color: #444;
+}
+
+#spr-panel button.spr-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin: 6px 0;
+  padding: 8px 10px;
+  border: 1px solid #e1dfdd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+#spr-panel button.spr-btn:hover {
+  background: #f8f8f8;
+}
+
+#spr-panel .spr-inline {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Toast */
+#spr-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  background: #323130;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 2147483647;
+  display: none;
+  font: 12px Segoe UI, Arial, sans-serif;
+}
+
+/* Logical/internal name tag on form labels */
+.spr-internal-tag {
+  color: #6b6b6b;
+  font-weight: 600;
+  margin-left: 6px;
+  font-size: 11px;
+  background: #f3f2f1;
+  border: 1px solid #e1dfdd;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+/* Modal */
+#spr-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: none;
+  z-index: 2147483647;
+}
+#spr-modal .spr-dialog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 92vw);
+  max-height: 80vh;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1dfdd;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+#spr-modal header {
+  padding: 10px 12px;
+  background: #f3f2f1;
+  border-bottom: 1px solid #e1dfdd;
+  font-weight: 600;
+}
+#spr-modal .spr-content {
+  padding: 12px;
+  overflow: auto;
+}
+#spr-modal table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 12px;
+}
+#spr-modal th,
+#spr-modal td {
+  border-bottom: 1px solid #eee;
+  padding: 6px 8px;
+  vertical-align: top;
+}
+#spr-modal th {
+  text-align: left;
+  width: 260px;
+  background: #faf9f8;
+}
+#spr-modal .spr-actions {
+  padding: 8px 12px;
+  border-top: 1px solid #e1dfdd;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+#spr-modal .spr-actions button {
+  padding: 6px 10px;
+  border: 1px solid #e1dfdd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+#spr-modal .spr-actions button:hover {
+  background: #f8f8f8;
+}

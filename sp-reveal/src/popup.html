@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SP Reveal</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+            <img id="brand-icon" src="icons/icon48.png" alt="SP Reveal logo" />
+            <span class="brand-title">SP Reveal</span>
+        </div>
+        <div class="brand-right">
+            <span class="copyright">© </span><a class="brand-copyright" href="https://about365.nl" target="_blank"
+                rel="noopener noreferrer">About365</a>
+        </div>
+    </header>
+
+    <!-- No Detect button and no Item ID UI (ID is handled internally) -->
+
+    <section class="grid">
+
+        <div class="section-header">
+            Item actions
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- SHOW INTERNAL (updated path, ultra-minified SVG) -->
+        <button class="action" data-cmd="SHOW_INTERNAL" title="Show logical (internal) names">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M19.75 2A2.25 2.25 0 0 1 22 4.25v5.462a3.25 3.25 0 0 1-.952 2.298l-8.5 8.503a3.255 3.255 0 0 1-4.597.001L3.489 16.06a3.25 3.25 0 0 1-.003-4.596l8.5-8.51A3.25 3.25 0 0 1 14.284 2h5.465ZM17 5.502a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3Z">
+                </path>
+            </svg>
+            <span>Show logical names</span>
+        </button>
+
+        <!-- CLEAR INTERNAL (broom) -->
+        <button class="action" data-cmd="CLEAR_INTERNAL" title="Clear logical names">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M22.452 1.923a.75.75 0 0 1 0 1.06L16.14 9.296a6.814 6.814 0 0 0-1.067-1.053l6.32-6.32a.75.75 0 0 1 1.06 0ZM15.028 9.347a5.75 5.75 0 0 0-8.132 0l-.244.244 8.132 8.132.244-.244a5.75 5.75 0 0 0 0-8.132ZM1.884 12.966l3.613-2.409 8.32 8.321-2.408 3.613a.75.75 0 0 1-1.154.115L1.769 14.12a.75.75 0 0 1 .115-1.154Z">
+                </path>
+            </svg>
+            <span>Clear logical names</span>
+        </button>
+
+        <!-- COPY ITEM ID -->
+        <button class="action" data-cmd="COPY_ITEM_ID" title="Copy Item ID">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M10.985 3.165a1 1 0 0 0-1.973-.33l-.86 5.163L3.998 8a1 1 0 1 0 .002 2l3.817-.002-.667 4L3 14a1 1 0 1 0 0 2l3.817-.002-.807 4.838a1 1 0 1 0 1.973.329l.862-5.167 4.975-.003-.806 4.84a1 1 0 1 0 1.972.33l.862-5.17L20 15.992a1 1 0 0 0 0-2l-3.819.001.667-4.001L21 9.99a1 1 0 0 0 0-2l-3.818.002.804-4.827a1 1 0 1 0-1.972-.33l-.86 5.159-4.975.003.806-4.832Zm-1.14 6.832 4.976-.003-.667 4.001-4.976.002.667-4Z">
+                </path>
+            </svg>
+            <span>Copy item ID</span>
+        </button>
+
+        <!-- DUPLICATE ITEM -->
+        <button class="action" data-cmd="DUPLICATE" title="Duplicate item (simple fields)">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M5.503 4.627 5.5 6.75v10.504a3.25 3.25 0 0 0 3.25 3.25h8.616a2.251 2.251 0 0 1-2.122 1.5H8.75A4.75 4.75 0 0 1 4 17.254V6.75c0-.98.627-1.815 1.503-2.123ZM17.75 2A2.25 2.25 0 0 1 20 4.25v13a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-13A2.25 2.25 0 0 1 8.75 2h9Z">
+                </path>
+            </svg>
+            <span>Duplicate item</span>
+        </button>
+
+        <!-- COPY ITEM URL (two-path icon) -->
+        <button class="action" data-cmd="COPY_ITEM_URL" title="Copy item URL">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M6.502 3.003a3.5 3.5 0 0 0-3.5 3.5v6a3.5 3.5 0 0 0 3.5 3.5H7v-2h-.497a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h6a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-1.506v2h1.506a3.5 3.5 0 0 0 3.5-3.5v-6a3.5 3.5 0 0 0-3.5-3.5h-6Z">
+                </path>
+                <path
+                    d="M10 11.5a1.5 1.5 0 0 1 1.5-1.5h1.499V8H11.5A3.5 3.5 0 0 0 8 11.5v6a3.5 3.5 0 0 0 3.5 3.5h6a3.5 3.5 0 0 0 3.5-3.5v-6A3.5 3.5 0 0 0 17.5 8h-.495v2h.495a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5v-6Z">
+                </path>
+            </svg>
+            <span>Copy item URL</span>
+        </button>
+
+        <!-- COPY ITEM API URL -->
+        <button class="action" data-cmd="COPY_API_URL" title="Copy item API URL">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="m8.086 18.611 5.996-14.004a1 1 0 0 1 1.878.677l-.04.11-5.996 14.004a1 1 0 0 1-1.878-.677l.04-.11 5.996-14.004L8.086 18.61Zm-5.793-7.318 4-4a1 1 0 0 1 1.497 1.32l-.083.094L4.414 12l3.293 3.293a1 1 0 0 1-1.32 1.498l-.094-.084-4-4a1 1 0 0 1-.083-1.32l.083-.094 4-4-4 4Zm14-4.001a1 1 0 0 1 1.32-.083l.093.083 4.001 4.001a1 1 0 0 1 .083 1.32l-.083.095-4.001 3.995a1 1 0 0 1-1.497-1.32l.084-.095L19.584 12l-3.293-3.294a1 1 0 0 1 0-1.414Z">
+                </path>
+            </svg>
+            <span>Copy item API URL</span>
+        </button>
+
+        <!-- SHOW ALL FIELDS -->
+        <button class="action" data-cmd="SHOW_ALL_FIELDS" title="Show all fields">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M5 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1ZM5 10a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1ZM5 14a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1ZM5 18a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z">
+                </path>
+            </svg>
+            <span>Show all fields</span>
+        </button>
+
+        <div class="section-header">
+            List actions
+            <div class="section-divider"></div>
+        </div>
+
+        <!-- COPY LIST GUID (same as Copy item ID) -->
+        <button class="action" data-cmd="COPY_LIST_GUID" title="Copy list GUID">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M10.985 3.165a1 1 0 0 0-1.973-.33l-.86 5.163L3.998 8a1 1 0 1 0 .002 2l3.817-.002-.667 4L3 14a1 1 0 1 0 0 2l3.817-.002-.807 4.838a1 1 0 1 0 1.973.329l.862-5.167 4.975-.003-.806 4.84a1 1 0 1 0 1.972.33l.862-5.17L20 15.992a1 1 0 0 0 0-2l-3.819.001.667-4.001L21 9.99a1 1 0 0 0 0-2l-3.818.002.804-4.827a1 1 0 1 0-1.972-.33l-.86 5.159-4.975.003.806-4.832Zm-1.14 6.832 4.976-.003-.667 4.001-4.976.002.667-4Z">
+                </path>
+            </svg>
+            <span>Copy list GUID</span>
+        </button>
+
+        <!-- COPY LIST URL (same two-path icon as Copy item URL) -->
+        <button class="action" data-cmd="COPY_LIST_URL" title="Copy list URL">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M6.502 3.003a3.5 3.5 0 0 0-3.5 3.5v6a3.5 3.5 0 0 0 3.5 3.5H7v-2h-.497a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 1.5-1.5h6a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-1.506v2h1.506a3.5 3.5 0 0 0 3.5-3.5v-6a3.5 3.5 0 0 0-3.5-3.5h-6Z">
+                </path>
+                <path
+                    d="M10 11.5a1.5 1.5 0 0 1 1.5-1.5h1.499V8H11.5A3.5 3.5 0 0 0 8 11.5v6a3.5 3.5 0 0 0 3.5 3.5h6a3.5 3.5 0 0 0 3.5-3.5v-6A3.5 3.5 0 0 0 17.5 8h-.495v2h.495a1.5 1.5 0 0 1 1.5 1.5v6a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 0 1-1.5-1.5v-6Z">
+                </path>
+            </svg>
+            <span>Copy list URL</span>
+        </button>
+
+        <!-- COPY LIST API URL -->
+        <button class="action" data-cmd="COPY_LIST_API_URL" title="Copy list API URL">
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="m8.086 18.611 5.996-14.004a1 1 0 0 1 1.878.677l-.04.11-5.996 14.004a1 1 0 0 1-1.878-.677l.04-.11 5.996-14.004L8.086 18.61Zm-5.793-7.318 4-4a1 1 0 0 1 1.497 1.32l-.083.094L4.414 12l3.293 3.293a1 1 0 0 1-1.32 1.498l-.094-.084-4-4a1 1 0 0 1-.083-1.32l.083-.094 4-4-4 4Zm14-4.001a1 1 0 0 1 1.32-.083l.093.083 4.001 4.001a1 1 0 0 1 .083 1.32l-.083.095-4.001 3.995a1 1 0 0 1-1.497-1.32l.084-.095L19.584 12l-3.293-3.294a1 1 0 0 1 0-1.414Z">
+                </path>
+            </svg>
+            <span>Copy list API URL</span>
+        </button>
+
+    </section>
+
+    <footer>
+        <div id="status">SP Reveal — Productivity tool for SharePoint</div>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

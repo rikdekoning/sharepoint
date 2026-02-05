@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "SP Reveal",
+  "version": "1.1.0",
+  "description": "Toolkit for SharePoint lists: show internal names, copy item and list URLs or API paths, duplicate items, inspect fields.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "SP Reveal",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "clipboardWrite",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.sharepoint.com/*",
+    "https://*.sharepoint.us/*",
+    "https://*.sharepoint.de/*",
+    "https://*.sharepoint-mil.us/*",
+    "https://*.sharepoint.cn/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.sharepoint.com/*",
+        "https://*.sharepoint.us/*",
+        "https://*.sharepoint.de/*",
+        "https://*.sharepoint-mil.us/*",
+        "https://*.sharepoint.cn/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "minimum_chrome_version": "114",
+  "minimum_edge_version": "114"
+}

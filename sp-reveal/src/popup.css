@@ -1,0 +1,125 @@
+:root {
+  --sp-blue: #0078d4;
+  --theme-bg: #fff;
+  --theme-header-bg: #f3f2f1;
+  --theme-border: #e1dfdd;
+  --theme-text: #242424;
+  --theme-muted: #666;
+  --theme-button-bg: #fff;
+  --theme-button-border: #e1dfdd;
+  --theme-button-hover: #f7fbff;
+  --theme-divider: #f1f1f1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sp-blue: #58a6ff;
+    --theme-bg: #1f1f1f;
+    --theme-header-bg: #2a2a2a;
+    --theme-border: #3c3c3c;
+    --theme-text: #fff;
+    --theme-muted: #bbb;
+    --theme-button-bg: #292929;
+    --theme-button-border: #3c3c3c;
+    --theme-button-hover: #3a3f42;
+    --theme-divider: #3a3a3a;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 360px;
+  margin: 0;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  background: var(--theme-header-bg);
+  border-bottom: 1px solid var(--theme-border);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#brand-icon {
+  height: 18px;
+  width: auto;
+  display: block;
+}
+.brand-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--theme-text);
+}
+.brand-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.brand-right a {
+  color: var(--sp-blue);
+  text-decoration: none;
+}
+.brand-right a:hover {
+  text-decoration: underline;
+}
+.grid {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.section-header {
+  grid-column: 1/-1;
+  font-weight: 600;
+  color: var(--theme-text);
+  margin-top: 8px;
+}
+.section-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 4px;
+  background: var(--theme-divider);
+}
+button.action {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--theme-button-border);
+  border-radius: 8px;
+  padding: 8px;
+  background: var(--theme-button-bg);
+  color: var(--theme-text);
+  cursor: pointer;
+}
+button.action:hover {
+  background: var(--theme-button-hover);
+  border-color: var(--sp-blue);
+}
+button.action svg {
+  width: 20px;
+  height: 20px;
+}
+button.action svg path {
+  fill: var(--sp-blue);
+}
+footer {
+  padding: 8px 10px;
+  border-top: 1px solid var(--theme-border);
+}
+#status {
+  font-size: 12px;
+  color: var(--theme-muted);
+  min-height: 14px;
+}
