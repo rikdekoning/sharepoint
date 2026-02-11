@@ -57,15 +57,19 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
 
 ## 🎥 Screenshots
 
-docs/screenshots/screenshot1.png  
-docs/screenshots/screenshot2.png  
-docs/screenshots/screenshot3.png
+[![Screenshot 1](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot1.png)](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot1.png)
+
+[![Screenshot 2](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot2.png)](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot2.png)
+
+[![Screenshot 3](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot3.png)](https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot3.png)
 
 ---
 
 ## 🔍 How It Works
 
-SP Reveal injects a lightweight content script **only on SharePoint domains** (`*.sharepoint.com`, `*.sharepoint.us`, `*.sharepoint.de`, etc.).  
+SP Reveal injects a lightweight content script **only on SharePoint domains**  
+(`*.sharepoint.com`, `*.sharepoint.us`, `*.sharepoint.de`, etc.).
+
 All processing occurs **entirely in the browser** using the user’s existing SharePoint permissions.
 
 The extension:
@@ -82,11 +86,11 @@ The extension:
 
 SP Reveal:
 
-- Does **not** collect or transmit any data  
+- Does **not** collect or transmit data  
 - Stores no SharePoint or personal content  
-- Processes only what is visible on the current page  
+- Processes only what is visible on the current SharePoint page  
 - Never communicates with external servers  
-- Uses no privileged Chrome permissions  
+- Uses **no privileged Chrome permissions**
 
 See full privacy policy: `docs/privacy-policy.md`
 
@@ -103,7 +107,7 @@ See full privacy policy: `docs/privacy-policy.md`
 ## ❗ Known Limitations
 
 - Classic SharePoint pages may behave differently  
-- SharePoint permission restrictions still apply (the extension cannot bypass them)  
+- SharePoint permission restrictions still apply  
 - Some cached SharePoint pages may require a refresh  
 
 ---
