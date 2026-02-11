@@ -39,6 +39,7 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
    git clone https://github.com/rikdekoning/sharepoint.git
 
 2. Navigate to the SP Reveal extension folder:
+
    ```bash
    cd sharepoint/sp-reveal
 
@@ -50,75 +51,67 @@ https://microsoftedge.microsoft.com/addons/detail/sp-reveal/mpknkmeflipbbmdepeei
 
 5. Click **Load unpacked**.
 
-6. Select the `src/` folder inside the sp-reveal folder.
+6. Select the `src/` folder inside the `sp-reveal` directory.
 
 ---
 
 ## 🎥 Screenshots
 
-![Screenshot 1](docs/screenshots/screenshot1.png) ![Screenshot 2](docs/screenshots/screenshot2.png) ![Screenshot 3](docs/screenshots/screenshot3.png)
+docs/screenshots/screenshot1.png  
+docs/screenshots/screenshot2.png  
+docs/screenshots/screenshot3.png
 
 ---
 
 ## 🔍 How It Works
 
-SP Reveal injects a lightweight content script **only on SharePoint domains** (`*.sharepoint.com`, `*.sharepoint.us`, etc.).  
-All processing occurs **entirely in the browser** and uses the user’s existing SharePoint permissions.
+SP Reveal injects a lightweight content script **only on SharePoint domains** (`*.sharepoint.com`, `*.sharepoint.us`, `*.sharepoint.de`, etc.).  
+All processing occurs **entirely in the browser** using the user’s existing SharePoint permissions.
 
 The extension:
-- Reads SharePoint form structure and metadata
-- Extracts list paths, list IDs, and item IDs
-- Detects modern dialogs, classic forms, and list grid selections
-- Retrieves field definitions and item data via SharePoint REST (`/_api/web/lists/...`)
-- Never sends data to external servers
+
+- Reads SharePoint form structure and metadata  
+- Extracts list paths, list IDs, and item IDs  
+- Detects modern dialogs, classic forms, and list grid selections  
+- Retrieves field definitions and item data via SharePoint REST (`/_api/web/lists/...`)  
+- Never sends data to external servers  
 
 ---
 
 ## 🔒 Privacy & Security
 
 SP Reveal:
-- Does **not** collect or transmit data  
-- Uses permissions only to operate on the active SharePoint tab  
-- Stores only tiny local settings  
-- Never communicates with external services  
 
-See: `docs/privacy-policy.md`
+- Does **not** collect or transmit any data  
+- Stores no SharePoint or personal content  
+- Processes only what is visible on the current page  
+- Never communicates with external servers  
+- Uses no privileged Chrome permissions  
 
----
-
-## 🔑 Permissions
-
-| Permission       | Reason |
-|------------------|--------|
-| `activeTab`      | Communicate with the active SharePoint page |
-| `tabs`           | Required by Chrome MV3 to get active tab ID |
-| `scripting`      | Inject the content script |
-| `storage`        | Store small local preferences |
-| `clipboardWrite` | Copy IDs, URLs, API paths, internal names |
-| Host permissions | Access SharePoint Online pages |
+See full privacy policy: `docs/privacy-policy.md`
 
 ---
 
 ## 🧑‍💻 Development
 
 1. Modify files inside the `src/` directory.  
-2. Reload the extension via the browser’s extension page.  
-3. For publishing, zip the **contents of `src/`** and upload to Chrome/Edge stores.
+2. Reload the extension via Chrome/Edge extension settings.  
+3. For publishing, zip the **contents of `src/`** (not the folder itself) and upload to the Chrome or Edge store dashboards.
 
 ---
 
 ## ❗ Known Limitations
 
 - Classic SharePoint pages may behave differently  
-- SharePoint permission restrictions still apply  
-- Some cached pages may require a refresh  
+- SharePoint permission restrictions still apply (the extension cannot bypass them)  
+- Some cached SharePoint pages may require a refresh  
 
 ---
 
 ## 🤝 Contributing
 
 Issues and pull requests are welcome.  
-This project is designed for transparency, simplicity, and enterprise use.
+This project is designed for transparency, simplicity, and enterprise usability.
 
 ---
 
@@ -133,7 +126,3 @@ See `LICENSE` for details.
 
 Created by **Rik de Koning**  
 More at: https://about365.nl
-
-
-
-
