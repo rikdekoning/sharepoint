@@ -12,20 +12,6 @@
     "default_title": "SP Reveal",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "storage",
-    "clipboardWrite",
-    "tabs"
-  ],
-  "host_permissions": [
-    "https://*.sharepoint.com/*",
-    "https://*.sharepoint.us/*",
-    "https://*.sharepoint.de/*",
-    "https://*.sharepoint-mil.us/*",
-    "https://*.sharepoint.cn/*"
-  ],
   "content_scripts": [
     {
       "matches": [
