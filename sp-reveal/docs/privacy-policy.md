@@ -1,114 +1,96 @@
 # Privacy Policy — SP Reveal
+_Last updated: February 2026_
 
-**Last updated: February 2026**
-
-SP Reveal is a browser extension designed to enhance productivity when working with SharePoint Online lists and items. This policy explains what information the extension accesses, how it is used, and how your privacy is protected.
-
----
-
-## 1. Overview
-
-SP Reveal processes information **only within your browser**, and **no data ever leaves your device**.  
-The extension does **not** collect, store, transmit, or sell any personal or organizational information.
+SP Reveal is a browser extension designed to enhance productivity when working with SharePoint Online lists and items. This privacy policy explains what information the extension accesses, how it is used, and how your data is protected.
 
 ---
 
-## 2. Data Collection
+## 1. Data Collection
 
-SP Reveal **does not collect any data**.
+SP Reveal **does not collect, store, transmit, or share any personal data**.
 
-Specifically, the extension does **not**:
-
-- collect personal data  
-- collect Microsoft 365 tenant information  
-- collect SharePoint content  
+The extension does **not**:
 - collect browsing history  
-- create usage logs  
-- send analytics  
-- use cookies  
-- communicate with external servers  
+- collect user identifiers  
+- collect login information  
+- send data to external servers  
+- track usage  
+- use analytics or telemetry  
 
-All operations occur locally in the browser.
+All processing happens **locally** within the user's browser.
+
+---
+
+## 2. Permissions
+
+SP Reveal **does not request any optional or sensitive Chrome permissions**.
+
+The extension operates entirely through:
+- a statically declared content script  
+- user‑initiated actions (e.g., clicking copy buttons)  
+- built‑in browser clipboard APIs  
+
+No additional Chrome APIs or permissions (tabs, storage, scripting, clipboardWrite, etc.) are used or required.
+
+SP Reveal runs only on SharePoint pages due to its `content_scripts.matches` patterns, not because of host permissions.
 
 ---
 
 ## 3. Data Usage
 
-The extension reads certain elements of the active SharePoint page **only when the user interacts with it**. Examples include:
+SP Reveal interacts only with the **current SharePoint page** the user is viewing and only when the user triggers an action in the extension's UI.
 
-- reading form field labels to display internal field names  
-- reading list and item metadata to build URLs  
-- reading item data when showing all fields  
-- reading SharePoint REST API responses that the user already has permission to access  
+Any information read from the page—such as field labels, list metadata, or item details—is:
+- accessed **only** in response to a user action  
+- used solely to perform the requested feature (e.g., copy a URL, reveal an internal name)  
+- processed entirely within the browser  
+- never logged, saved, uploaded, or shared  
 
-This information is used **only to perform the requested action** (e.g., copy a URL, duplicate an item) and is **never stored or transmitted**.
-
----
-
-## 4. Permissions Explained
-
-SP Reveal requests browser permissions solely to support its core functionality:
-
-- **activeTab / tabs** — to send commands to the current SharePoint tab.  
-- **scripting** — to inject the content script that interacts with SharePoint forms.  
-- **storage** — to save minimal non‑sensitive settings (e.g., manual item ID).  
-- **clipboardWrite** — to copy URLs, GUIDs, IDs, and internal names at the user’s request.  
-- **host permissions** — required to access and read SharePoint page metadata.
-
-These permissions **do not grant the extension access to personal information** beyond what is already visible to the user on the SharePoint page.
+The extension does **not** modify SharePoint data except when the user explicitly chooses **Duplicate Item**, which uses SharePoint’s own REST APIs and the user’s existing permissions.
 
 ---
 
-## 5. Data Storage
+## 4. Data Storage
 
-The extension only stores:
+SP Reveal does **not** use Chrome storage APIs.
 
-- lightweight local preferences (e.g., a manually entered item ID)
-
-No SharePoint data or user information is ever stored locally or remotely.
-
-All stored data remains on the user’s device and can be cleared at any time by:
-
-- removing the extension, or  
-- clearing browser extension storage  
+No data—personal, SharePoint-related, or otherwise—is stored locally or remotely.
 
 ---
 
-## 6. Third-Party Sharing
+## 5. Third‑Party Sharing
 
-SP Reveal does **not** share data with:
+SP Reveal does **not** share any data with third parties.
 
-- third parties  
-- external APIs  
-- analytics services  
-- advertisers  
-- cloud servers  
+The extension contains:
+- no trackers  
+- no analytics  
+- no external API calls  
+- no advertising modules  
 
-There is **no** network communication except calls made directly to SharePoint sites the user is already authenticated to.
-
----
-
-## 7. Security
-
-Because SP Reveal does not transmit data, security risk is minimal. The extension:
-
-- operates only on approved SharePoint Online domains  
-- cannot access sites outside SharePoint  
-- cannot bypass user permissions in SharePoint  
-- cannot access SharePoint without the user being logged in  
-- runs entirely in the browser sandbox  
-
-Users maintain full control of their data at all times.
+All functionality is self‑contained.
 
 ---
 
-## 8. Changes to This Policy
+## 6. Security
 
-This privacy policy may be updated as the extension evolves. The latest version will always be available in the GitHub repository.
+Because the extension runs entirely on the user’s device:
+- no external transmission reduces exposure risk  
+- no data leaves the browser  
+- SP Reveal cannot access anything the user is not already permitted to access within SharePoint  
+- the extension cannot interact with or read data from non‑SharePoint websites  
+
+All SharePoint operations respect the user’s existing Microsoft 365 authentication.
 
 ---
 
-## 9. Contact
+## 7. Changes to This Policy
 
-For questions, feedback, or support, please visit:  
+Any updates to this privacy policy will be published in the extension store listings and the public GitHub repository.
+
+---
+
+## 8. Contact
+
+For questions or support, please visit:  
 **https://about365.nl**
