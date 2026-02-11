@@ -14,9 +14,9 @@ A SharePoint productivity toolkit to reveal internal names, copy URLs, duplicate
 
 ## 📝 Long Description (Chrome & Edge)
 
-SP Reveal is a modern productivity extension for SharePoint Online that adds powerful tools directly into list and item forms. It is designed for SharePoint administrators, developers, and power users who need fast access to internal field names, item metadata, and API-ready URLs.
+SP Reveal is a modern productivity extension for SharePoint Online that adds powerful tools directly into list and item forms. It is designed for SharePoint administrators, developers, and power users who need fast access to internal field names, item metadata, and API‑ready URLs.
 
-With SP Reveal, you can instantly inspect list items, duplicate existing items, extract URLs or API paths, and analyze all item fields in a searchable Fluent-style dialog — all without leaving the page.
+With SP Reveal, you can instantly inspect list items, duplicate existing items, extract URLs or API paths, and analyze all item fields in a searchable Fluent‑style dialog — all without leaving the page.
 
 ### 🔍 Key Features
 
@@ -37,9 +37,9 @@ With SP Reveal, you can instantly inspect list items, duplicate existing items, 
 ### ✨ Additional Highlights
 - Works on modern and classic SharePoint forms  
 - Detects selected items in list grid views  
-- Fast and lightweight — no performance impact  
+- Fast and lightweight  
 - Supports light and dark mode  
-- Fully client-side — does not send or store data  
+- Fully client‑side — does not send or store data  
 
 ### 🔒 Privacy & Security
 
@@ -64,25 +64,25 @@ See the full privacy policy at: `docs/privacy-policy.md`
 ## 📸 Screenshot Captions (with working URLs)
 
 1. **"Quick tools for SharePoint items — copy IDs, URLs, and API endpoints instantly."**  
-   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/docs/screenshots/screenshot1.png
+   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot1.png
 
 2. **"Reveal internal (logical) column names directly on the form."**  
-   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/docs/screenshots/screenshot2.png
+   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot2.png
 
 3. **"Inspect all item fields with search and JSON export."**  
-   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/docs/screenshots/screenshot3.png
+   https://raw.githubusercontent.com/rikdekoning/sharepoint/main/sp-reveal/docs/screenshots/screenshot3.png
 
-These URLs always display correctly in:
+These URLs work in:
 - Chrome Web Store  
 - Edge Add-ons  
 - GitHub  
-- Any Markdown viewer  
+- Preview tools  
 
 ---
 
-## 🏷️ Promotional Text (Optional)
+## 🏷️ Promotional Text
 
-SP Reveal adds developer-friendly tools to SharePoint list forms: reveal internal names, copy URLs and IDs, duplicate items, and inspect full field data — all inside the browser.
+SP Reveal adds developer‑friendly tools to SharePoint list forms: reveal internal names, copy URLs and IDs, duplicate items, and inspect full field data — all inside the browser.
 
 ---
 
